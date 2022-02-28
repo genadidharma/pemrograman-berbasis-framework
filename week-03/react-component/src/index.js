@@ -5,9 +5,10 @@ import App from './App';
 import Test from './Test';
 import reportWebVitals from './reportWebVitals';
 import HelloComponent from './HelloComponent';
+import Login from './Login/Login';
 
 ReactDOM.render(
-  <HelloComponent/>,
+  <Login/>,
   document.getElementById('root')
 );
 
