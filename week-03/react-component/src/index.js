@@ -4,10 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+function HelloComponent(){
+  return HelloComponent
+}
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <HelloComponent/>,
   document.getElementById('root')
 );
 
