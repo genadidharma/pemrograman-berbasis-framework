@@ -8,8 +8,14 @@ function HelloComponent(){
   return HelloComponent
 }
 
+class StateFullComponent extends React.Component{
+  render(){
+    return <p>StateFullComponent</p>
+  }
+}
+
 ReactDOM.render(
-  <HelloComponent/>,
+  <StateFullComponent/>,
   document.getElementById('root')
 );
 
