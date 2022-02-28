@@ -4,9 +4,10 @@ import './index.css';
 import App from './App';
 import Test from './Test';
 import reportWebVitals from './reportWebVitals';
+import HelloComponent from './HelloComponent';
 
 ReactDOM.render(
-  <Test/>,
+  <HelloComponent/>,
   document.getElementById('root')
 );
 
