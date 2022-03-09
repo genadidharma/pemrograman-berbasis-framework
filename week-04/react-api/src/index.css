@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.menu *{
+  padding:8px 12px;
+}
+
+#sidebar{
+  background-color: aquamarine;
+}
+
+#content{
+  background-color: lightgray;
+}
