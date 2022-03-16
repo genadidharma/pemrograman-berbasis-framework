@@ -5,12 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Params from './Params';
 import Nesting from './Nesting';
+import Auth from './Auth';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <Params/> */}
-    <Nesting/>
+    {/* <Nesting/> */}
+    <Auth/>
   </React.StrictMode>,
   document.getElementById('root')
 );
