@@ -4,11 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Params from './Params';
+import Nesting from './Nesting';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Params/>
+    {/* <Params/> */}
+    <Nesting/>
   </React.StrictMode>,
   document.getElementById('root')
 );
