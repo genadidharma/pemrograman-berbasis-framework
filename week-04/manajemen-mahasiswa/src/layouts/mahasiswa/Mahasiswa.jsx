@@ -27,6 +27,13 @@ class Mahasiswa extends Component {
             })
     }
 
+    deleteData = (id) => {
+        fetch(`${API_URL}/mahasiswa/${id}`, { method: 'DELETE' })
+            .then(() => {
+                this.getData()
+            })
+    }
+
     componentDidMount() {
         this.getData()
     }
@@ -40,7 +47,7 @@ class Mahasiswa extends Component {
                         <AddButton />
                         {
                             this.state.listMahasiswa.map(mahasiswa => {
-                               return <ProfileCard key={mahasiswa.id} nama={mahasiswa.nama} nim={mahasiswa.nim} angkatan={mahasiswa.angkatan} alamat={mahasiswa.alamat} telepon={mahasiswa.telepon} status={mahasiswa.status} />
+                                return <ProfileCard key={mahasiswa.id} idProfile={mahasiswa.id} nama={mahasiswa.nama} nim={mahasiswa.nim} angkatan={mahasiswa.angkatan} alamat={mahasiswa.alamat} telepon={mahasiswa.telepon} status={mahasiswa.status} deleteProfile={this.deleteData}/>
                             })
                         }
                     </SimpleGrid>

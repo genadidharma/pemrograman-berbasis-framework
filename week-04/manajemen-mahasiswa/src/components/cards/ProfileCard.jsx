@@ -3,12 +3,14 @@ import { Avatar, Box, Flex, Text, Heading, IconButton, Stack, useColorModeValue,
 import React from 'react';
 
 const ProfileCard = ({
+    idProfile,
     nama,
     nim,
     angkatan,
     alamat,
     telepon,
-    status
+    status,
+    deleteProfile
 }) => {
     return (
         <Box
@@ -39,6 +41,7 @@ const ProfileCard = ({
                         icon={<DeleteIcon w={4} h={4} />}
                         variant={'ghost'}
                         aria-label={'Hapus Mahasiswa'}
+                        onClick={() => deleteProfile(idProfile)}
                     />
                 </Flex>
             </Flex>
