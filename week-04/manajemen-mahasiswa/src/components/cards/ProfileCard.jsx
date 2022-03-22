@@ -50,7 +50,7 @@ const ProfileCard = ({
                 spacing={2}
                 alignItems={'left'}
                 mt={8}>
-                <Heading as='h3' size='lg' color={useColorModeValue('gray.900', 'white')}>
+                <Heading as='h3' size='lg' textOverflow={'ellipsis'} color={useColorModeValue('gray.900', 'white')}>
                     {nama}
                 </Heading>
                 <HStack
@@ -93,14 +93,14 @@ const ProfileCard = ({
                                 h={3}
                                 color={useColorModeValue('gray.500', 'white')} />
                             <Box as='span' ml='2' color='gray.800' fontSize='sm'>
-                                {telepon}
+                                {`(+62) ${telepon}`}
                             </Box>
                         </Box>
                     </VStack>
                 </Box>
                 <Spacer />
                 <Box>
-                    <Badge ml='1' colorScheme={(status == 'aktif') ? 'green' : 'blue'} fontSize={'sm'}>
+                    <Badge ml='1' colorScheme={(status == 'Aktif') ? 'green' : 'blue'} fontSize={'sm'}>
                         {status}
                     </Badge>
                 </Box>

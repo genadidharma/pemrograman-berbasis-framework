@@ -5,9 +5,19 @@
       "nim": 140823453,
       "nama": "Mahasiswa X",
       "alamat": "Jl. Menur No. 9 Surabaya",
-      "telepon": "081802023523",
+      "telepon": "81802023523",
       "angkatan": 2014,
       "status": "lulus"
+    },
+    {
+      "id": 1647990556537,
+      "nim": "1941720069",
+      "nama": "Genadi Dharma",
+      "alamat": "Jalan Piranha",
+      "hp": "",
+      "angkatan": "2018",
+      "status": "Aktif",
+      "telepon": "812345676453"
     }
   ]
 }
