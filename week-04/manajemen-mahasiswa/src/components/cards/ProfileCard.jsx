@@ -97,7 +97,7 @@ const ProfileCard = ({
                 </Box>
                 <Spacer />
                 <Box>
-                    <Badge ml='1' colorScheme={(status == 'aktif') ? 'green' : 'red'} fontSize={'sm'}>
+                    <Badge ml='1' colorScheme={(status == 'aktif') ? 'green' : 'blue'} fontSize={'sm'}>
                         {status}
                     </Badge>
                 </Box>
