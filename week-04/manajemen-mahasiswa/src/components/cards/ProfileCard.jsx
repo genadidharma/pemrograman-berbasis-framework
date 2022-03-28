@@ -83,7 +83,7 @@ const ProfileCard = ({
                                 w={3}
                                 h={3}
                                 color={useColorModeValue('gray.500', 'white')} />
-                            <Box as='span' ml='2' color='gray.800' fontSize='sm'>
+                            <Box as='span' ml='2' color={useColorModeValue('gray.800', 'white')} fontSize='sm'>
                                 {alamat}
                             </Box>
                         </Box>
@@ -92,7 +92,7 @@ const ProfileCard = ({
                                 w={3}
                                 h={3}
                                 color={useColorModeValue('gray.500', 'white')} />
-                            <Box as='span' ml='2' color='gray.800' fontSize='sm'>
+                            <Box as='span' ml='2' color={useColorModeValue('gray.800', 'white')} fontSize='sm'>
                                 {`(+62) ${telepon}`}
                             </Box>
                         </Box>

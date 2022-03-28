@@ -55,7 +55,10 @@ const AddButton = ({
                     {
                         onSave && (
                             <ModalFooter>
-                                <Button colorScheme='blue' mr={3} onClick={onSave}>
+                                <Button colorScheme='blue' mr={3} onClick={() => {
+                                    onSave()
+                                    onClose()
+                                }}>
                                     Tambah
                                 </Button>
                                 <Button onClick={onClose}>Batal</Button>
