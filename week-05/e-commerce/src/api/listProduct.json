@@ -1,0 +1,88 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "image": "https://m.media-amazon.com/images/I/61dtL2p3fxL._AC_UL320_.jpg",
+            "imageAlt": "Eyeglasses Tommy Hilfiger TH 1584 0KB7 Grey Image",
+            "title": "Tommy Hilfiger TH 1584 0KB7 Grey",
+            "price": "$50",
+            "description": "Brand Tommy Hilfiger has always remained true to its original philosophy—even while experiencing significant growth in recent years. By emphasizing innovation, originality, quality and value Tommy Hilfiger has refined its vision to earn worldwide recognition. Contemporary optical design, unparalleled craftsmanship, outstanding warranty, and superior customer care defines Tommy Hilfiger. Tommy Hilfiger has made the ascent from humble beginnings to its present position: a worldwide leader in affordable luxury eyewear. Tommy Hilfiger uses state-of-the-art materials to craft their signature eyewear frames: premium cellulose acetate, ultra-lightweight titanium, and color-rich stainless steel. Tommy Hilfiger eyeglasses include demo lenses with Brand logo etched into the lens. These demo lenses are designed to imitate the real look of a prescription eyewear as close as possible to a traditional l prescription lens. Demo lenses can’t be worn simply as a fashion statement. Upon receipt of the frame they must be replaced with real lenses by a local optical shop regardless of prescription strength even for a perfect vision. From the earliest design conversations, sophisticated eyewear brands such as Tommy Hilfiger develops innovative designs that feature layers of depth through the finest materials in optical. This commitment to craftsmanship delivers unmatched quality and timeless style that transform glasses from pure function to coveted pieces.",
+            "details": {
+                "dimension": "6 x 2 x 2 inches; 0.63 Ounces",
+                "department": "Mens",
+                "frameType": "Plastic",
+                "lensWidth": "48 milimeters"
+            }
+        },
+        {
+            "id": 2,
+            "image": "https://m.media-amazon.com/images/I/51zmY6y0FHL._AC_UL320_.jpg",
+            "imageAlt": "Ray-Ban Rx5387f Image",
+            "title": "Ray-Ban Rx5387f",
+            "price": "$225",
+            "description": "Ray Ban Eyeglasses Frames have a history of quality and are considered American classics. Ray-Ban is the world's most iconic eyewear brand and is a global leader in its sector. Every model in the Ray-Ban collection is the product of meticulous, original styling that translates the best of the latest fashion trends into an ever-contemporary look for millions of Ray-Ban wearers around the world. Each pair of Ray-Ban Eyeglass Frames come with clear demo lenses to be replaced with your prescription. Each pair of Ray-Ban prescription frames come with a cleaning cloth and case to clean, protect and store your eyeglasses. Ray-Ban products sold by authorized sellers, like , are eligible for all manufacturer warranties and s. Visit the Ray-Ban shop by clicking on Ray-Ban above the product title to shop the entire Ray-Ban sunglass and optical assortment.",
+            "details": {
+                "dimension": "6 x 2 x 2 inches; 0.7 Ounces",
+                "department": "Unisex-adult",
+                "frameType": "Plastic",
+                "lensWidth": "55 milimeters"
+            }
+        },
+        {
+            "id": 3,
+            "image": "https://m.media-amazon.com/images/I/51ia2Wb05kL._AC_UL320_.jpg",
+            "imageAlt": "Oakley OX8046 Image",
+            "title": "Oakley OX8046 ",
+            "price": "$180",
+            "description": "Express your impeccable taste with these handsome Oakley Airdrop eyeglasses for men. The basic rectangular lenses have straight, clean lines that add definition to round and oval faces. Their precise, streamlined frames are made of O Matter, a lightweight and resilient material that is functional and stylish. The comfortable Three-Point Fit configuration consists of a smooth saddle bridge and sleek temple tips made of non-slip Unobtainium, all of which keep these stress-resistant, O Matter-frame Oakley eyeglasses in place.",
+            "details": {
+                "dimension": "7 x 3 x 3 inches; 1 Pounds",
+                "department": "Mens",
+                "frameType": "Plastic",
+                "lensWidth": "55 milimeters"
+            }
+        },
+        {
+            "id": 4,
+            "image": "https://m.media-amazon.com/images/I/61E2JKLcOwL._AC_UL320_.jpg",
+            "imageAlt": "Oakley Men's Oo9188 Flak 2.0 XL Image",
+            "title": "Oakley Men's Oo9188 Flak 2.0 XL Rectangular Sunglasses ",
+            "price": "$219",
+            "description": "The XL edition of the Oakley Flak 2.0 sunglasses offers a standard size frame with enhanced lens coverage, and every millimeter of the peripheral view is optimized with High Definition Optics in a durable yet lightweight design that takes performance to the next level and brings style along for the ride. Essential gear for competition, the Oakley Flak 2.0 XL Sunglasses have a 8.75 base lens curvature for protection against sun, wind and impact, and patented XYZ Optics maintains clarity along the full curve while you push your limits with the comfort and secure grip of Unobtainium . Oakley created an array of lens/frame combinations so you can choose options including the glare-cutting power of Polarized optics, the balanced light transmission of Iridium lens coatings, and Prizm lens technology that fine-tunes vision by emphasizing colors where the eye is most sensitive to detail. Oakley was created for world-class athletes, those who see the limits of possibility as just another challenge. Their dedication drives the brand to look beyond the conventional ideas of industry standards. It's in Oakley's DNA to identify problems, create inventions, and wrap those inventions in art. And simply to make things better than anyone thought possible.",
+            "details": {
+                "dimension": "6 x 3 x 3 inches; 0.8 Ounces",
+                "department": "Mens",
+                "frameType": "Plastic",
+                "lensWidth": "59 milimeters"
+            }
+        },
+        {
+            "id": 5,
+            "image": "https://m.media-amazon.com/images/I/71ygupz6EEL._AC_UL320_.jpg",
+            "imageAlt": "Tommy Hilfiger T. 1561 0003 Image",
+            "title": "Eyeglasses Tommy Hilfiger T. 1561 0003 Matte Black / 00 Demo Lens ",
+            "price": "$57",
+            "description": "Brand Tommy Hilfiger has always remained true to its original philosophy—even while experiencing significant growth in recent years. By emphasizing innovation, originality, quality and value Tommy Hilfiger has refined its vision to earn worldwide recognition. Contemporary optical design, unparalleled craftsmanship, outstanding warranty, and superior customer care defines Tommy Hilfiger. Tommy Hilfiger has made the ascent from humble beginnings to its present position: a worldwide leader in affordable luxury eyewear. Tommy Hilfiger uses state-of-the-art materials to craft their signature eyewear frames: premium cellulose acetate, ultra-lightweight titanium, and color-rich stainless steel. Tommy Hilfiger eyeglasses include demo lenses with Brand logo etched into the lens. These demo lenses are designed to imitate the real look of a prescription eyewear as close as possible to a traditional l prescription lens. Demo lenses can’t be worn simply as a fashion statement. Upon receipt of the frame they must be replaced with real lenses by a local optical shop regardless of prescription strength even for a perfect vision. From the earliest design conversations, sophisticated eyewear brands such as Tommy Hilfiger develops innovative designs that feature layers of depth through the finest materials in optical. This commitment to craftsmanship delivers unmatched quality and timeless style that transform glasses from pure function to coveted pieces.",
+            "details": {
+                "dimension": "6 x 2 x 2 inches; 0.99 Ounces",
+                "department": "Mens",
+                "frameType": "Plastic",
+                "lensWidth": "55 milimeters"
+            }
+        },
+        {
+            "id": 6,
+            "image": "https://m.media-amazon.com/images/I/61d9zTcYSzL._AC_UL320_.jpg",
+            "imageAlt": "Tommy Hilfiger T. 1591 0FLL",
+            "title": "Eyeglasses Tommy Hilfiger T. 1591 0FLL Matte Blue / 00 Demo Lens Image",
+            "price": "$65",
+            "description": "Brand Tommy Hilfiger has always remained true to its original philosophy—even while experiencing significant growth in recent years. By emphasizing innovation, originality, quality and value Tommy Hilfiger has refined its vision to earn worldwide recognition. Contemporary optical design, unparalleled craftsmanship, outstanding warranty, and superior customer care defines Tommy Hilfiger. Tommy Hilfiger has made the ascent from humble beginnings to its present position: a worldwide leader in affordable luxury eyewear. Tommy Hilfiger uses state-of-the-art materials to craft their signature eyewear frames: premium cellulose acetate, ultra-lightweight titanium, and color-rich stainless steel. Tommy Hilfiger eyeglasses include demo lenses with Brand logo etched into the lens. These demo lenses are designed to imitate the real look of a prescription eyewear as close as possible to a traditional l prescription lens. Demo lenses can’t be worn simply as a fashion statement. Upon receipt of the frame they must be replaced with real lenses by a local optical shop regardless of prescription strength even for a perfect vision. From the earliest design conversations, sophisticated eyewear brands such as Tommy Hilfiger develops innovative designs that feature layers of depth through the finest materials in optical. This commitment to craftsmanship delivers unmatched quality and timeless style that transform glasses from pure function to coveted pieces.",
+            "details": {
+                "dimension": "6 x 2 x 2 inches; 0.74 Ounces",
+                "department": "Mens",
+                "frameType": "Plastic",
+                "lensWidth": "55 milimeters"
+            }
+        }
+    ]
+}
