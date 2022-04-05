@@ -3,20 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import GenericContainerDemo from './GenericContainer/GenericContainerDemo';
-import CustomFormDemo from './CustomForm/CustomFormDemo';
-import LoaderDemo from './LoadDemo/LoaderDemo';
-import RequireAuthDemo from './ProtectedRoutes/RequireAuthDemo';
-import RefsDemo from './RefsDemo/RefsDemo';
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <GenericContainerDemo/> */}
-    {/* <CustomFormDemo/> */}
-    {/* <LoaderDemo/> */}
-    {/* <RequireAuthDemo/> */}
-    <RefsDemo/>
-
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
