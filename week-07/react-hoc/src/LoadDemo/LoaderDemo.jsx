@@ -24,14 +24,13 @@ class LoaderDemo extends Component {
             mode: 'cors',
             cache: 'default'
         };
-        fetch('https://demo1443058.mockable.io/users/', init)
+        fetch('http://demo8878412.mockable.io/users/', init)
             .then((response) => (response.json()))
             .then(
                 (data) => {
-                    console.log(data); this.setState(
-                        prevState => ({
-                            contactList: [...data.contacts]
-                        })
+                    console.log(data); this.setState({
+                        contactList: [...data.contacts]
+                    }
                     )
                 }
             )
