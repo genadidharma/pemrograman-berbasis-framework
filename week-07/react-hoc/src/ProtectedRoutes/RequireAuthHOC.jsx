@@ -1,21 +1,24 @@
 import React, { Component } from 'react';
 
-const RequireAuth = ComposedComponent => {
-    return class Authentication extends Component {
+const withAuth = WrappedComponent => {
+    return class ProtectedRoutes extends Component {
 
+        /* Checks whether the used is authenticated on Mount*/
         componentWillMount() {
-            console.log(this.props);
             if (!this.props.authenticated) {
                 this.props.history.push('/login');
             }
         }
+
         render() {
+
             return (
                 <div>
-                    <ComposedComponent {...this.props} />
+                    <WrappedComponent {...this.props} />
                 </div>
             )
         }
     }
 }
-export default RequireAuth;
+
+export default withAuth;
