@@ -1,5 +1,5 @@
 import React from 'react';
-import CustomForm from './CustomFormHOC.jsx';
+import CustomForm from './CustomFormHoc.jsx';
 
 const Form = (props) => {
     const handleSubmit = (e) => {

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-const CustomForm = (propState) => ({ propName, propListName }) => WrappedCompone
-nt => {
+const CustomForm = (propState) => ({ propName, propListName }) => WrappedComponent => {
     return class CustomForm extends Component {
         constructor(props) {
             super(props);
