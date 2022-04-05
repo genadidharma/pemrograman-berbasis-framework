@@ -1,42 +1,36 @@
-import React, { Component } from 'react'
-
+import React, { Component } from 'react';
 const GenericContainer = ({ reqUrl, reqMethod, resName }) => WrappedComponent => {
     return class GenericContainer extends Component {
         constructor(props) {
-            super(props)
+            super(props);
             this.state = {
-                [resName]: []
+                [resName]: [],
+
             }
         }
-
         componentWillMount() {
             let init = {
                 method: reqMethod,
                 headers: new Headers(),
                 mode: 'cors',
                 cache: 'default'
-            }
-
+            };
             fetch(reqUrl, init)
                 .then((response) => (response.json()))
                 .then(
                     (data) => {
-                        this.setState(
-                            prevState => ({
-                                [resName]: [...data.contacts]
-                            })
-                        )
+                        this.setState({
+                            [resName]: [...data.contacts]
+                        })
                     }
                 )
-                .then(console.log(this.state))
-        }
 
+
+        }
         render() {
             return (
-                <WrappedComponent {...this.props} {...this.state} />
-            )
+                <WrappedComponent {...this.props} {...this.state} />)
         }
     }
 }
-
-export default GenericContainer
+export default GenericContainer;
