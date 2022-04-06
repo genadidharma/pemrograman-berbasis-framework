@@ -1,0 +1,46 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "image": "https://cdn.eraspace.com/pub/media/catalog/product/cache/184775a204380039ae47e1177f9cfc1b/s/a/samsung_galaxy_a53_awesome_black_1.jpg",
+            "nama": "Samsung Galaxy A53 5G 8/128GB - Awesome Black",
+            "harga": 5999000,
+            "stok": 8
+        },
+        {
+            "id": 2,
+            "image": "https://cdn.eraspace.com/pub/media/catalog/product/cache/184775a204380039ae47e1177f9cfc1b/g/a/galaxy_s22_ultra_phantom_white_1_1_1.jpg",
+            "nama": "Samsung Galaxy S22 Ultra 5G 12/512GB - Phantom White",
+            "harga": 20999000,
+            "stok": 3
+        },
+        {
+            "id": 3,
+            "image": "https://cdn.eraspace.com/pub/media/catalog/product/cache/184775a204380039ae47e1177f9cfc1b/g/a/galaxy_s22_phantom_white_1_2_1.jpg",
+            "nama": "Samsung Galaxy S22+ 5G 8/256GB - Phantom White",
+            "harga": 15999000,
+            "stok": 5
+        },
+        {
+            "id": 4,
+            "image": "https://cdn.eraspace.com/pub/media/catalog/product/cache/184775a204380039ae47e1177f9cfc1b/s/a/samsung_galaxy_s21_fe_5g_olive_1.jpg",
+            "nama": "Samsung Galaxy S21 FE 5G 8/128GB - Olive",
+            "harga": 8999000,
+            "stok": 6
+        },
+        {
+            "id": 5,
+            "image": "https://cdn.eraspace.com/pub/media/catalog/product/cache/184775a204380039ae47e1177f9cfc1b/s/a/samsung_galaxy_m52_5g_black_1.jpg",
+            "nama": "Samsung Galaxy M52 5G 8/128GB - Black",
+            "harga": 5399000,
+            "stok": 5
+        },
+        {
+            "id": 6,
+            "image": "https://cdn.eraspace.com/pub/media/catalog/product/cache/184775a204380039ae47e1177f9cfc1b/s/a/samsung_galaxy_a12_white_1_1.jpg",
+            "nama": "Samsung Galaxy A12 4/128GB A127F - White",
+            "harga": 2299000,
+            "stok": 12
+        }
+    ]
+}
