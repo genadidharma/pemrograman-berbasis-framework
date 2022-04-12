@@ -51,17 +51,12 @@ function todoProduct(state = initProduct, action) {
             }
         case INCREASE_QUANTITY:
             state.numberCart++
-            state.Carts[action.payload].qty++;
 
             return {
                 ...state
             }
         case DECREASE_QUANTITY:
-            let qty = state.Carts[action.payload].qty;
-            if (qty > 1) {
-                state.numberCart--;
-                state.Carts[action.payload].qty--;
-            }
+            state.numberCart--;
 
             return {
                 ...state

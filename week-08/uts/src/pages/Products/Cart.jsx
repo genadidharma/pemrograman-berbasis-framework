@@ -10,12 +10,15 @@ import {
 } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import NumberFormat from 'react-number-format';
+import { useDispatch } from 'react-redux';
+import { DecreaseQuantity, IncreaseQuantity } from '../../actions/products';
 import { API_CART_URL } from '../../api';
 import CartItem from '../../components/table/CartItem';
 
 function Cart() {
     const [cartProducts, setCartProducts] = useState([])
     const [subTotal, setSubTotal] = useState(0)
+    const dispatch = useDispatch()
 
     useEffect(() => {
         getData()
@@ -54,8 +57,12 @@ function Cart() {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(product)
+            body: JSON.stringify({
+                ...product,
+                id: new Date().getTime(),
+            })
         }).then(() => {
+            dispatch(IncreaseQuantity())
             getData()
         })
     }
@@ -63,6 +70,7 @@ function Cart() {
     const decreaseQuantity = (id) => {
         fetch(`${API_CART_URL}/cart/${id}`, { method: 'DELETE' })
             .then(() => {
+                dispatch(DecreaseQuantity())
                 getData()
             })
     }

@@ -54,17 +54,15 @@ export function UpdateCart(payload) {
         payload
     }
 }
-export function DeleteCart(payload) {
+export function DeleteCart() {
     return {
-        type: 'DELETE_CART',
-        payload
+        type: 'DELETE_CART'
     }
 }
 
-export function IncreaseQuantity(payload) {
+export function IncreaseQuantity() {
     return {
-        type: 'INCREASE_QUANTITY',
-        payload
+        type: 'INCREASE_QUANTITY'
     }
 }
 export function DecreaseQuantity(payload) {
