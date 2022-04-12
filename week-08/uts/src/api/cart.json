@@ -1,11 +1,20 @@
 {
-    "cart": [
-        {
-            "id": 1,
-            "image": "",
-            "nama": "",
-            "harga": 0,
-            "qty": 0
-        }
-    ]
+  "cart": [
+    {
+      "id": 1649772032681,
+      "image": "https://cdn.eraspace.com/pub/media/catalog/product/cache/184775a204380039ae47e1177f9cfc1b/s/a/samsung_galaxy_a53_awesome_black_1.jpg",
+      "nama": "Samsung Galaxy A53 5G 8/128GB - Awesome Black",
+      "harga": 5999000,
+      "stok": 8,
+      "productId": 1
+    },
+    {
+      "id": 1649772033538,
+      "image": "https://cdn.eraspace.com/pub/media/catalog/product/cache/184775a204380039ae47e1177f9cfc1b/s/a/samsung_galaxy_a53_awesome_black_1.jpg",
+      "nama": "Samsung Galaxy A53 5G 8/128GB - Awesome Black",
+      "harga": 5999000,
+      "stok": 8,
+      "productId": 1
+    }
+  ]
 }
