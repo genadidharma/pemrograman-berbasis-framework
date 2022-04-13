@@ -79,8 +79,19 @@ const Navbar = () => {
                         color={useColorModeValue('gray.800', 'white')}>
                         <Link to='/'> SamStore </Link>
                     </Text>
+                    <Text
+                        textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
+                        ml={8}
+                        color={useColorModeValue('blue.800', 'white')}>
+                        <Link to='/products'> Products </Link>
+                    </Text>
+                    <Text
+                        textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
+                        ml={8}
+                        color={useColorModeValue('blue.800', 'white')}>
+                        <Link to='/about'> About </Link>
+                    </Text>
                 </Flex>
-
                 <HStack
                     flex={{ base: 1, md: 0 }}
                     justify={'flex-end'}

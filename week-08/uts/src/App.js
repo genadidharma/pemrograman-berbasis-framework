@@ -9,6 +9,8 @@ import Cart from './pages/Products/Cart';
 import { BrowserRouter } from 'react-router-dom';
 import { Switch } from 'react-router-dom';
 import { Route } from 'react-router-dom';
+import HomePage from './pages/Homepage/Homepage';
+import About from './pages/About/About';
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Switch>
-          <Route exact path='/' component={Products} />
+          <Route exact path='/' component={HomePage} />
+          <Route exact path='/about' component={About} />
+          <Route exact path='/products' component={Products} />
           <Route path='/cart' component={Cart} />
         </Switch>
       </BrowserRouter>
