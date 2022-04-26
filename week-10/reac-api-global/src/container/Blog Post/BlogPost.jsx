@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Post from "../Post";
+import API from '../../services'
 import './BlogPost.css'
 
 class BlogPost extends Component {
@@ -14,21 +15,18 @@ class BlogPost extends Component {
         }
     }
 
-    getData = () => {
-        fetch('http://localhost:3001/posts')
-            .then(response => response.json())
-            .then(result => {
-                this.setState({
-                    listArtikel: result
-                })
+    ambilDataDariServer = () => {
+        API.getNewBlog().then(result => {
+            this.setState({
+                listArtikel: result
             })
+        })
     }
 
     handleHapusArtikel = (data) => {
-        fetch(`http://localhost:3001/posts/${data}`, { method: 'DELETE' })
-            .then(() => {
-                this.getData()
-            })
+        API.deleteNewBlog(data).then(() => {
+            this.ambilDataDariServer()
+        })
     }
 
     handleFormArtikel = (event) => {
@@ -42,21 +40,14 @@ class BlogPost extends Component {
     }
 
     handleTambahArtikel = () => {
-        fetch('http://localhost:3001/posts', {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(this.state.insertArtikel)
+        API.postNewBlog(this.state.insertArtikel)
+        .then(() => {
+            this.ambilDataDariServer()
         })
-            .then((response) => {
-                this.getData()
-            })
     }
 
     componentDidMount() {
-        this.getData()
+        this.ambilDataDariServer()
     }
 
     render() {
@@ -81,7 +72,7 @@ class BlogPost extends Component {
 
                 <h2>Daftar Artikel</h2>
                 {
-                    this.state.listArtikel.reverse().map(artikel => {
+                    this.state.listArtikel.map(artikel => {
                         return <Post key={artikel.id} judul={artikel.title} isi={artikel.body} idArtikel={artikel.id} hapusArtikel={this.handleHapusArtikel} />
                     })
                 }
