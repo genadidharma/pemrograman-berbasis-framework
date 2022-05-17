@@ -1,6 +1,15 @@
 {
   "mahasiswa": [
     {
+      "id": 2,
+      "nim": 140823453,
+      "nama": "Mahasiswa X",
+      "alamat": "Jl. Menur No. 9 Surabaya",
+      "telepon": "81802023523",
+      "angkatan": 2014,
+      "status": "lulus"
+    },
+    {
       "id": 1647990556537,
       "nim": "1941720069",
       "nama": "Genadi Dharma",
