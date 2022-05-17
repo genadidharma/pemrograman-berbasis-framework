@@ -3,7 +3,7 @@ import { useContext } from 'react'
 import { useState } from 'react'
 import { AuthContext } from './App'
 import {
-    createUserWithEmailAndPassword, getAuth
+    createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, signInWithPopup
 } from 'firebase/auth';
 import { firebaseInit } from '.';
 
@@ -13,6 +13,7 @@ const Join = () => {
     const [error, setError] = useState("")
 
     const auth = getAuth(firebaseInit)
+    const googleProvider = new GoogleAuthProvider()
 
     const Auth = useContext(AuthContext)
     const handleForm = e => {
@@ -22,6 +23,15 @@ const Join = () => {
                 if (res.user) Auth.setLoggedIn(true)
             })
             .catch(e => {
+                setError(e.message)
+            })
+    }
+
+    const handleSignInWithPopUp = () => {
+        signInWithPopup(auth, googleProvider)
+            .then(res => {
+                if (res.user) Auth.setLoggedIn(true)
+            }).catch(e => {
                 setError(e.message)
             })
     }
@@ -43,11 +53,13 @@ const Join = () => {
                     type="password"
                     placeholder="password" />
                 <hr />
-                <button className="googleBtn">
+                <button 
+                    className="googleBtn"
+                    onClick={handleSignInWithPopUp}>
                     <img
                         src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png"
                         alt="logo" />
-                    Join with Google
+                    Login with Google
                 </button>
                 <button type="submit">Join</button>
                 <span>{error}</span>

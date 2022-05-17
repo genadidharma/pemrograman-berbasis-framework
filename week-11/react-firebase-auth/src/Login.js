@@ -3,7 +3,7 @@ import { useContext } from 'react'
 import { useState } from 'react'
 import { AuthContext } from './App'
 import {
-    signInWithEmailAndPassword, getAuth
+    signInWithEmailAndPassword, getAuth, GoogleAuthProvider, signInWithPopup
 } from 'firebase/auth';
 import { firebaseInit } from '.';
 
@@ -13,6 +13,7 @@ const Login = () => {
     const [error, setError] = useState("")
 
     const auth = getAuth(firebaseInit)
+    const googleProvider = new GoogleAuthProvider()
 
     const Auth = useContext(AuthContext)
     const handleForm = e => {
@@ -20,12 +21,21 @@ const Login = () => {
         console.log(Auth)
 
         signInWithEmailAndPassword(auth, email, password)
-        .then(res => {
-            if(res.user) Auth.setLoggedIn(true)
-        })
-        .catch(e => {
-            setError(e.message)
-        })
+            .then(res => {
+                if (res.user) Auth.setLoggedIn(true)
+            })
+            .catch(e => {
+                setError(e.message)
+            })
+    }
+
+    const handleSignInWithPopUp = () => {
+        signInWithPopup(auth, googleProvider)
+            .then(res => {
+                if (res.user) Auth.setLoggedIn(true)
+            }).catch(e => {
+                setError(e.message)
+            })
     }
 
     return (
@@ -45,7 +55,9 @@ const Login = () => {
                     type="password"
                     placeholder="password" />
                 <hr />
-                <button className="googleBtn">
+                <button 
+                    className="googleBtn"
+                    onClick={handleSignInWithPopUp}>
                     <img
                         src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png"
                         alt="logo" />
